@@ -1,0 +1,23 @@
+Roteiro - imc
+=============
+
+(X) Clonar projeto-base
+
+HTML: 
+(X) Montar HTML com 2 inputs do tipo texto e 1 botão
+(X) Utilizar id's nos inputs e botão
+(X) Inserir parágrafo para conter o resultado do cálculo
+
+CSS:
+(X) Estilizar inputs de forma que fiquem com o mesmo tamanho
+
+JavaScript:
+(X) Criar função start
+(X) Executar start()
+(X) Criar e implementar função calculateImc(weight, height)
+(X) Em start, obter os inputs e botão como variáveis com document.querySelector
+(X) Fazer com que botão calcule o IMC com addEventListener do tipo 'click'
+(X) Tornar o programa mais dinâmico monitorando os inputs com addEventListener
+   do tipo 'input'
+() Tornar os inputs mais amigáveis utilizando o type="number" e utilizando o 
+   atributo step

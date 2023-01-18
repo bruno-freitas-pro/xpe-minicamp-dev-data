@@ -1,0 +1,46 @@
+<html>
+    <script>
+        //Criar um programa para informar se determinado número é primo ou não
+        //1 - Criar uma função que recebe um número como parâmetro
+        //2 - Dentro da função, criar um laço de repetição
+        //3 - Dentro do laço, verificar se o algum o número informado dividido pelos números anteriores gera resto zero
+        //4 - O divisor deve ser maior que 1
+        //5 - O resultado deve ser verdadeiro quando o número é primo
+        //6 - O resultado deve ser falso se o número NÃO é primo
+        //7 - 
+        /*function verificaNumeroPrimo(numero) {
+            var numeroPrimo = true;
+            var divisor = numero-1;
+            while(numeroPrimo === true && divisor >1) {
+                if (numero % divisor === 0) {
+                    numeroPrimo = false;
+                    console.log((divisor) + ": O número", numero, "NÃO é primo.")
+                }
+                divisor--;
+            }
+
+            if (numeroPrimo === true) {
+                console.log((divisor) + ": O número", numero, "é primo.");
+            }
+        }*/
+
+        function testeNumerosPrimos(primeiroNumero, ultimoNumero) {
+            for (var numeroAtual = primeiroNumero; numeroAtual <= ultimoNumero; numeroAtual++) {
+                var numeroPrimo = true;
+                var divisor = numeroAtual-1;
+                while(numeroPrimo === true && divisor >1) {
+                    if (numeroAtual % divisor === 0) {
+                        numeroPrimo = false;
+                        console.log((numeroAtual) + ": O número", numeroAtual, "NÃO é primo, pois é divisível por", divisor);
+                    }
+                    divisor--;
+                }
+
+                if (numeroPrimo === true) {
+                    console.log((numeroAtual) + ": O número", numeroAtual, "é primo.");
+                }
+            }
+        }
+
+    </script>
+</html>
