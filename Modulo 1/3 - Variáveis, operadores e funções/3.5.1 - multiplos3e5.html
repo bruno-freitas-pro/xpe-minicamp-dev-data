@@ -1,0 +1,57 @@
+<html>
+    <script>
+        //Se listarmos todos os números naturais menores
+        //que 10 e que são múltiplos de 3 ou 5, obtemos
+        //3, 5, 6 e 9. A soma desses múltiplos é 23.
+        //Encontre a soma de todos os múltiplos de 3 ou 5
+        //abaixo de 1000.
+
+        //Resposta correta: 233168
+
+        //1 - Criar uma função que verifica se um número é
+        //    divisível por 3 ou 5
+        //2 - Fazer um loop de 3 ate 999 verificando quais
+        //    números são divisíveis por 3 e 5.
+        //3 - Somar os números encontrados no passo 2
+
+        function verificaDivisivel(numero) {
+            //true  -> o número é divisível por 3 ou 5
+            //false -> o número não é divisível por 3 ou 5
+            if (numero % 3 === 0 || numero % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var soma = 0;
+        var lista = [];
+
+        //3, 4, 5, 6, 7, 8, 9, 10, 11 ... 997, 998, 999
+        /*for (var i = 3; i < 1000; i++) {
+            if (verificaDivisivel(i)) {
+                soma = soma + i;
+                lista.push(i);
+            }
+        }*/
+
+
+        function somaMultiplos3e5() {
+            var i = 3;
+            while (i < 1000) {
+                if (verificaDivisivel(i)) {
+                    soma = soma + i;
+                    lista.push(i);
+                }
+                i++;
+            }
+
+            // 0  1  2  3  4
+            //[5, 7, 8, 4, 9]
+            //lista.length = 5
+            for (var i=0; i < lista.length; i++) {
+                console.log(lista[i]);
+            }
+            return soma;
+        }
+    </script>
+</html>
